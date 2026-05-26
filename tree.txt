@@ -1,0 +1,46 @@
+\documentclass{report}
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+
+\begin{tikzpicture}[
+every node/.style={
+draw,
+rectangle,
+rounded corners,
+align=center
+},
+level 1/.style={sibling distance=4cm},
+level 2/.style={sibling distance=2cm},
+level distance=2cm
+]
+
+\node[red] {A}
+child {
+    node {B}
+    child { node {E} }
+    child { node {F} }
+}
+child {
+    node {C}
+    child { node {G} }
+    child { node {H} }
+}
+child {
+    node {D}
+    child { node {I} }
+    child { node {J} }
+};
+
+\end{tikzpicture}
+
+\caption{System family}
+
+\end{figure}
+
+\end{document}
