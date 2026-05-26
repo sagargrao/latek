@@ -1,0 +1,43 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+
+\section{Examples}
+
+\begin{theorem}[Pythagoras Theorem]
+\label{Pythagoras}
+
+In a right angled triangle, the square of hypotenuse is equal to the sum of squares of the other two sides.
+
+\end{theorem}
+
+\begin{lemma}
+
+Pythagoras was a mathematician.
+
+\end{lemma}
+
+\begin{corollary}
+
+The Pythagoras theorem is useful in geometry.
+
+\end{corollary}
+
+You can reference theorem~\ref{pythagoras}.
+
+\begin{definition}
+
+A right angled triangle is a triangle in which one angle is equal to $90^\circ$.
+
+\end{definition}
+
+\end{document}
+
